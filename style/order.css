@@ -1,0 +1,142 @@
+.order {
+    padding: 112px 0;
+}
+
+.order__title {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.order__title span{
+    display: block;
+}
+
+.order__about-list {
+    padding: 0 10px;
+    margin-top: 78px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__about-item {
+    padding-top: 106px;
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+}
+.order__about-item:first-child{
+    order: 1;
+}
+.order__about-item:nth-child(2){
+    order: 3;
+}
+
+.order__about-item span {
+    display: block;
+}
+
+.order__about-item img {
+    width: 192px;
+    height: 160px;
+    margin-bottom: 78px;
+}
+
+.order__about-item--main {
+    padding-top: 0;
+    order: 2;
+}
+
+.order__about-item--main img {
+    width: 480px;
+    height: 160px;
+    margin-bottom: 40px;
+}
+
+.order__about-item--main p {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    margin-bottom: 62px;
+}
+
+.order__about-item--main p span {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.order__price {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.order__price h3 {
+    position: relative;
+    width: 112px;
+    top: -4px;
+    right: 10px;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    font-weight: 400;
+    display: inline-block;
+    color: #ADADAD;
+}
+
+.order__price h3::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #ADADAD;
+    top: calc(50%);
+    left: 0;
+    right: 0;
+}
+
+.order__price h2 {
+    position: relative;
+    left: 18px;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: right;
+    font-weight: 400;
+
+    display: inline-block;
+}
+
+@media screen and (max-width: 1280px) {
+    .order__title {
+        padding: 0 20px;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .order__about-list{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .order__about-list{
+        margin-top: 0;
+        display: block;
+    }
+    .order img{
+        width: 100%;
+    }
+    .order__about-item img{
+        margin-bottom: 30px;
+    }
+    .order__about-item--main{
+        margin-top: 60px;
+    }
+
+}
